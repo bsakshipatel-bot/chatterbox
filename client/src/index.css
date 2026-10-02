@@ -1,0 +1,62 @@
+:root {
+  --text: #4b5b6b;
+  --text-h: #1a2b3c;
+  --bg: #eaf4fb;
+  --bg-raised: #ffffff;
+  --border: #cfe3f2;
+  --code-bg: #dcedf8;
+  --hover-bg: #dceaf5;
+  --incoming-bg: #e3eff8;
+  --accent: #3b93ff;
+  --accent-bg: rgba(59, 147, 255, 0.12);
+  --accent-border: rgba(59, 147, 255, 0.5);
+  --social-bg: rgba(220, 237, 248, 0.5);
+  --shadow:
+    rgba(59, 130, 246, 0.12) 0 10px 15px -3px, rgba(59, 130, 246, 0.08) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
